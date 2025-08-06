@@ -19,14 +19,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-[var(--primary-dark-500)]">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header>
           <NavBar/>
         </Header>
-        <main>
+        <main className="flex-1 pt-20">
           {children}
         </main>
       </body>

@@ -35,7 +35,7 @@ async function getLogo()
 
 const NavBar = async () => {
   const navBarItems = await getNavBarItems();
-  const logo = await getLogo()
+  const logo = await getLogo();
   
   return (
   <nav>
