@@ -1,7 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --dark-color-500: #171717;
+  --primary-dark-500: #171717;
+  --primary-dark-300: #262626;
   --primary-yellow-500: #F8B607;
+  --primary-light-100: #ffffff;
 }
-
+body {
+  font-family:'Inter',sans-serif;
+}
+h1,h2,h3{
+  font-family:'Poppins',sans-serif;
+}

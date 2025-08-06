@@ -1,0 +1,7 @@
+<!-- Football Tracker Logo -->
+<svg width="32" height="32" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ball Icon -->
+  <circle cx="25" cy="25" r="20" fill="#171717" stroke="#F8B607" stroke-width="3"/>
+  <polygon points="25,8 30,20 25,32 20,20" fill="#F8B607"/>
+  <polygon points="25,25 35,22 35,28" fill="#F8B607"/>
+</svg>

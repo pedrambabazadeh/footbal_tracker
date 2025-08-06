@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import {FaSearch, FaUser} from 'react-icons/fa'
 import './navbar.css'
+import SearchBar from '../searchBar/SearchBar'
 
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
@@ -38,28 +39,29 @@ const NavBar = async () => {
   
   return (
   <nav>
-   <div className='flex justify-center items-center'>
+   <div className='flex items-center justify-between'>
       <div className='flex justify-start items-center text-left w-20/60'>
-        <Image src={logo.src} alt={logo.alt} width={logo.width} height={logo.height}/>
+        <div className="w-full  flex items-center">
+        <Link href={logo.link} className='flex space-x-2'>
+          <Image src={logo.src} alt={logo.alt} width={logo.width} height={logo.height} className='logo'/>
+          <span className='text-xl font-bold text-[var(--primary-yellow-500)]'>
+          Football Tracker
+        </span>
+        </Link>
+        </div>
       </div>
-      <div className='w-20/60'>
-      <ul className='flex justify-center items-center gap-4'>
+      <div className='flex space-x-6 w-40/60'>
+      <ul className='flex justify-center items-center space-x-6 text-[var(--primary-light-100)]'>
           {navBarItems.map((item) => (
             <li key={item.name}>
-              <Link href={item.path}>{item.name}</Link>
+              <Link href={item.path} >{item.name}</Link>
             </li>
           ))}
         </ul>
-      </div>
-      <div className='w-20/60'>
-          <div className="flex justify-end items-center">
-            <div className="w-2/12 icon-button">
-              <FaUser/>
-            </div>
-            <div className="w-2/12 icon-button">
-              <FaSearch/>
-            </div>
-          </div>
+        <SearchBar/>
+        <Link href='#' className='bg-[#F8B607] text-[#171717] px-4 py-1.5 rounded-md font-semibold hover:scale-105 transition'>
+          Sign In
+        </Link>
       </div>
     </div>
   </nav>

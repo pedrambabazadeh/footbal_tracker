@@ -4,9 +4,6 @@ import {Header} from "@/components/exports/for-home"
 export default function Home() {
   return (
    <>
-    <Header>
-      
-    </Header>
 
    </>
   );

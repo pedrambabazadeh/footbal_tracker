@@ -14,5 +14,13 @@ export const navBarItems = [
     {
         name: "predictions",
         path: "/predictions",
+    },
+    {
+        name: "visuals",
+        path: "/visuals",
+    },
+    {
+        name: "analytics",
+        path: "/analytics",
     }
 ]
