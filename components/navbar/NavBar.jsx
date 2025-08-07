@@ -50,7 +50,7 @@ const NavBar = async () => {
         </Link>
         </div>
       </div>
-      <div className='flex space-x-6 w-40/60'>
+      <div className=' hidden md:flex space-x-6 w-40/60'>
       <ul className='flex justify-center items-center space-x-6 text-[var(--primary-light-100)]'>
           {navBarItems.map((item) => (
             <li key={item.name}>
