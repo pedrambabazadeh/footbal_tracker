@@ -5,6 +5,7 @@
   --primary-dark-300: #262626;
   --primary-yellow-500: #F8B607;
   --primary-light-100: #ffffff;
+  --primary-light-500: #A1A1A1;
 }
 body {
   font-family:'Inter',sans-serif;
