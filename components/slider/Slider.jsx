@@ -18,7 +18,7 @@ const Slider = async ({data})=>
 {
     const photos = await getSliderPhotos();
     return(
-        <section className='relative overflow-hidden w-full h-[400px]'>
+        <section className='relative overflow-hidden w-full mb-6 h-[400px]'>
             <div id="slider" className="silder flex transition-transform h-[100%] duration-700">
                { photos.map((photo, index) => {
                 return <div key={index} className='min-w-full h-full bg-cover bg-center' style={{backgroundImage : `url(${photo.url})`}}></div>
