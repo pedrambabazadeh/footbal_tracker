@@ -1,8 +1,9 @@
 import React from 'react'
+import './card.css'
 
 const Card = ({children, className}) => {
   return (
-    <div className={`bg-[var(--primary-dark-100)] flex-shrink-0 p-6 rounded-xl shadow-md hover:shadow-lg transition ${className}`}>
+    <div className={` card flex-shrink-0 p-6 rounded-xl shadow-md hover:shadow-lg transition ${className}`}>
       {children}
     </div>
   )

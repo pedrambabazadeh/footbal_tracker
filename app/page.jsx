@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {Header, Slider, Prediction, Results, Motto} from "@/components/exports/for-home"
+import {Header, Slider, Prediction, Results, Motto, BestPlayers } from "@/components/exports/for-home"
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
         <Prediction/>
         <Motto/>
         <Results/>
+        <BestPlayers/>
    </>
   );
 }

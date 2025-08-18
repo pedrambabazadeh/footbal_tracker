@@ -1,3 +1,5 @@
+import { BestPlayersSec } from '@/components/best-players/BestPlayersSec'
+
 export {default as Header} from '@/components/header/Header'
 export { default as Slider} from '@/components/slider/Slider'
 export {default as Prediction} from '@/components/predictCTA/PredictCTA'
@@ -5,3 +7,4 @@ export {default as Results} from '@/components/resultsSec/ResultsSec'
 export {default as Motto} from '@/components/mottoSec/MottoSec'
 export {default as CardGroup} from '@/components/cards/CardGroup'
 export {default as Card} from '@/components/cards/Card'
+export {default as BestPlayers} from '@/components/best-players/BestPlayersSec'

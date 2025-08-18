@@ -1,0 +1,7 @@
+section:not(.bg-\[var\(--primary-dark-100\)\]) .card {
+  background-color: var(--primary-dark-100);
+}
+
+section.bg-\[var\(--primary-dark-100\)\] .card {
+  background-color: var(--primary-dark-500);
+}
