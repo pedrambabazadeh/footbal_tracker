@@ -13,6 +13,11 @@ const teams = [
     id: 3,
     name: "Inter Miami",
     logo: "https://upload.wikimedia.org/wikipedia/en/5/5c/Inter_Miami_CF_logo.svg"
+  },
+  {
+    id: 4,
+    name: "Liverpool",
+    logo: "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg"
   }
 ];
 

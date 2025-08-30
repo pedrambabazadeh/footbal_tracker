@@ -37,6 +37,32 @@ const players = [
     careerGoals: 820, // approximate
     age: 38,
     height: "1.70 m"
+  },
+  {
+    id: 104,
+    name: "Kevin De Bruyne",
+    image: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRhWDKgAhCLvSDjl4NFIp8xMAcA7gw5BfSdR_u_FYRnfZYUKnFQTM62q9PgpNKgkwg0QHuq04jrNdJFdlI",
+    teamId: 1, // Manchester City
+    seasonGoals: 3,
+    seasonAssists: 9,
+    previousTeams: ["Genk", "Chelsea", "Wolfsburg"],
+    nationalGoals: 26,
+    careerGoals: 160,
+    age: 34,
+    height: "1.81 m"
+  },
+  {
+    id: 105,
+    name: "Mohamed Salah",
+    image: "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2025-04/250411-Mohamed-Salah-mn-0840-d890b7.jpg",
+    teamId: 4, // Liverpool (add this team to your teams list)
+    seasonGoals: 8,
+    seasonAssists: 5,
+    previousTeams: ["Basel", "Chelsea", "Fiorentina", "Roma"],
+    nationalGoals: 53,
+    careerGoals: 260,
+    age: 33,
+    height: "1.75 m"
   }
-]
+];
 export default players;
