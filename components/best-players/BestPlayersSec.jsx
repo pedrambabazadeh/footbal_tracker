@@ -30,8 +30,8 @@ const BestPlayersSec = async ({data}) => {
                             </div>
                             <p className='mb-3 text-sm text-[var(--primary-light-500)] '>
                                 {'Goals: '}
-                                <span className='font-semibold text-[var(--primary-yellow-500)]'>{player.goals}</span>
-                                {' | Assists: '}{player.assists}
+                                <span className='font-semibold text-[var(--primary-yellow-500)]'>{player.seasonGoals}</span>
+                                {' | Assists: '}{player.seasonAssists}
                             </p>
                             <button className="w-full bg-[var(--primary-yellow-500)] text-[var(--primary-dark-500)] p-1.5 font-semibold rounded-lg hover:bg-yellow-400">
                                 View Profile
