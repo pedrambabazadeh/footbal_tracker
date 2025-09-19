@@ -6,7 +6,7 @@ import { ResultsChart, PerformanceChart } from '../all-charts/AllCharts'
 
 const ChartsSec = () => {
   return (
-    <section className='px-6 py-16'>
+    <section className='px-6 py-16 text-white'>
         <h2 className="text-3xl font-bold text-[var(--primary-yellow-500)] mb-6 text-center">
             Match analytics
         </h2>

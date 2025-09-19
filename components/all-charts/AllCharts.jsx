@@ -11,6 +11,7 @@ import {
   LineElement,
   ArcElement,
   RadialLinearScale,
+  scales,
 } from "chart.js";
 
 ChartJS.register(
@@ -27,21 +28,30 @@ ChartJS.register(
 );
 
 export function ResultsChart(){  const data = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+    labels: ["Arsenal", "Chelsea", "Liverpool", "Barcelona", "Bayern Munich"],
     datasets: [
       {
-        label: "Sales",
-        data: [150, 200, 180, 220, 300],
-        backgroundColor: "rgba(75, 192, 192, 0.5)",
+        label: "Goals Scored",
+        data: [8,5,7,6,9],
+        backgroundColor: "#F8B607"
       },
     ],
   };
 
   const options = {
     responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks:{color: "#eaeaea"}
+      },
+      x:{
+        ticks:{color: "#eaeaea"}
+      }
+    },
     plugins: {
-      legend: { position: "top" },
-      title: { display: true, text: "Monthly Sales (Bar Chart)" },
+      legend: { position: "top", labels:{color: "#ffffff" } },
+     // title: { display: true, text: "Monthly Sales (Bar Chart)", color: "#ffffff" },
     },
   };
 
@@ -50,13 +60,13 @@ export function ResultsChart(){  const data = {
 
 export function PerformanceChart(){ 
     const data = {
-    labels: ["Mon", "Tue", "Wed", "Thu", "Fri"],
+    labels: ["Match1", "Match2", "Match3", "Match4", "Match5"],
     datasets: [
       {
-        label: "Visitors",
-        data: [120, 150, 170, 140, 200],
-        borderColor: "rgba(53, 162, 235, 1)",
-        backgroundColor: "rgba(53, 162, 235, 0.5)",
+        label: "Possession %",
+        data: [58, 29, 67, 54, 47],
+        borderColor: "#00FF9D",
+        backgroundColor: "rgba(0,255,157,0.2)",
         fill: true,
         tension: 0.4
       },
@@ -65,8 +75,18 @@ export function PerformanceChart(){
 
   const options = {
     responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks:{color: "#eaeaea"}
+      },
+      x:{
+        ticks:{color: "#eaeaea"}
+      }
+    },
     plugins: {
-      title: { display: true, text: "Daily Visitors (Line Chart)" },
+      //title: { display: true, text: "Daily Visitors (Line Chart)" , color: "#ffffff" },
+      legend: { position: "top", labels:{color: "#ffffff" } },
     },
   };
 
