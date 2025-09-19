@@ -1,5 +1,8 @@
+"use client"
+
 import React from 'react'
-import { Card, CardGroup } from '@/components/exports/for-home'
+import { Card, CardGroup, Results } from '@/components/exports/for-home'
+import { ResultsChart, PerformanceChart } from '../all-charts/AllCharts'
 
 const ChartsSec = () => {
   return (
@@ -9,10 +12,10 @@ const ChartsSec = () => {
         </h2>
         <CardGroup className="md:grid-cols-2 gap-8">
             <Card>
-                {/* Chart 1 content */}
+                <ResultsChart />
             </Card>
             <Card>
-                {/* Chart 2 content */}
+                <PerformanceChart />
             </Card>
         </CardGroup>
     </section>
