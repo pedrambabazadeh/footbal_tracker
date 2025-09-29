@@ -5,12 +5,12 @@ export const photos = [
         link: ''
     },
     {
-        url: 'https://upload.wikimedia.org/wikipedia/commons/1/1d/Redcard.jpg',
+        url: 'https://media.cnn.com/api/v1/images/stellar/prod/221216085242-03-world-cup-memorable-moments.jpg?q=w_1160,c_fill/f_webp',
         alt: 'attractive moment Manchester United vs Chelsea',
         link: ''
     },
     {
-        url: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Injury_at_Galaxy_at_Earthquakes_2010-08-21_2.JPG',
+        url: 'https://media.cnn.com/api/v1/images/stellar/prod/221216085015-01-world-cup-memorable-moments.jpg?q=w_1160,c_fill/f_webp',
         alt: 'attractive moment Alhilal vs Arsenal',
         link: ''
     },

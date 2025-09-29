@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaCaretLeft, FaCaretRight } from 'react-icons/fa';
+import SliderInner from './SliderInner';
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
@@ -20,9 +21,7 @@ const Slider = async ({data})=>
     return(
         <section className='relative overflow-hidden w-full mb-6 h-[400px]'>
             <div id="slider" className="silder flex transition-transform h-[100%] duration-700">
-               { photos.map((photo, index) => {
-                return <div key={index} className='min-w-full h-full bg-cover bg-center' style={{backgroundImage : `url(${photo.url})`}}></div>
-               })}
+               <SliderInner data={photos} />
             </div>
             <button id="prev" className='absolute text-white top-1/2 left-4 transform -translate-y-1/2 bg-black/30 p-2 rounded-full'>
                <FaCaretLeft/>
