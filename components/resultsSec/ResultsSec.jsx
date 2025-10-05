@@ -14,13 +14,13 @@ const ResultsSec = async () => {
   return (
     <section className="px-6 py-16">
       <h2 className="text-3xl font-bold text-[var(--primary-yellow-500)] mb-6">Latest Matches</h2>
-      <CardGroup className="sm:grid-cols-2">
+      <div className="flex overflow-x-hidden gap-6 pb-4 scrollbar-hide snap-x snap-mandatory [&>*]:snap-start">
         {data.map((result, index) => (
-          <Card key={index}>
+          <Card key={index} className="w-[calc(50%-.75rem)]">
             <InnerResult result={result} />
           </Card>
         ))}
-      </CardGroup>
+      </div>
     </section>
   )
 }
