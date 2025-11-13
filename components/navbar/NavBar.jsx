@@ -59,7 +59,7 @@ const NavBar = async () => {
           ))}
         </ul>
         <SearchBar/>
-        <Link href='#' className='bg-[#F8B607] text-[#171717] px-4 py-1.5 rounded-md font-semibold hover:scale-105 transition'>
+        <Link href='log-in' className='bg-[#F8B607] text-[#171717] px-4 py-1.5 rounded-md font-semibold hover:scale-105 transition'>
           Sign In
         </Link>
       </div>
