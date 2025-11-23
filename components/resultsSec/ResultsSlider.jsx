@@ -18,12 +18,12 @@ const ResultsSlider = ({ data }) => {
     const handleScrollLeft = (e) => {
         //by the next start code here for handling the scroll
         setScrollPosition(prev => (prev - 50));
-       // directionRef.current = scrollDirection.left;
+       directionRef.current = scrollDirection.left;
     }
     const handleScrollRight = (e) => {
         //by the next start code here for handling the scroll;
         setScrollPosition(prev => (prev + 50));
-       // directionRef.current = scrollDirection.right;
+       directionRef.current = scrollDirection.right;
     }
 
     const handleTransitionEnd = () => {
@@ -33,19 +33,24 @@ const ResultsSlider = ({ data }) => {
     const arr = [...prev];
     if (directionRef.current === scrollDirection.left) {
       arr.push(arr.shift());
+      console.log('scrolled left' + arr);
+      directionRef.current = scrollDirection.none;
     } else {
       arr.unshift(arr.pop());
+      console.log('scrolled right' + arr);
+      directionRef.current = scrollDirection.none;
     }
+      //setScrollPosition(0);
+    
     return arr;
-  });
-setScrollPosition(0);}
+  });}
     // I should handle that .75rem difference in transform. also, has to make the infinite scroll using the same data array twice and %
   return (
     <div className='overflow-x-hidden w-full relative'>
       <button onClick={handleScrollLeft} className="absolute left-0 top-1/2 bg-[var(--primary-yellow-500)] text-black p-2 rounded-full shadow-lg transform -translate-y-1/2 z-10 hover:bg-yellow-400">
           <FaCaretLeft />
         </button>
-      <div onTransitionEnd={handleTransitionEnd} style={{ transform: `translateX(${scrollPosition}%)` }} id="slider_results" className="transition relative flex  pb-4 scrollbar-hide">
+      <div onTransitionEnd={handleTransitionEnd} style={{ transform: `translateX(${scrollPosition}%)` }} id="slider_results" className="transition-transform duration-300 ease-linear relative flex  pb-4 scrollbar-hide">
             {sliderStatus.map((result, index) => (
                 <div className='w-6/12 shrink-0 px-2' key={index}>
                     <Card >
