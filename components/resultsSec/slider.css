@@ -1,0 +1,7 @@
+/*[data-direction="left"], [data-direction="right"] {
+    transition:     300ms ease-linear;
+    -webkit-transition:     30ms ease-linear;
+    -moz-transition:     30ms ease-linear;
+    -ms-transition:     30ms ease-linear;
+    -o-transition:     30ms ease-linear;
+}*/
